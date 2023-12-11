@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="">
+    <title>@antopasaribu-71231044-Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <b>Welcome to My Personal Hompage</b>
+    </header>
+
+    <section id="tentang-saya">
+        <h1 class="anto"><b>About Me</b></h1>
+    </section>
+
+    <section id="fot">
+        <img src="anto.jpg" alt="">
+    </section>
+
+    <section id="keterampilan">
+        <h1>Anto Jonathan Pasaribu</h1>
+        <p>
+            <li>
+                <b>@antojonathanpasaribu</b>
+            </li>
+        </p>
+        <p>
+            <li>
+                <b>Medan, Indonesia</b>
+            </li>
+        </p>
+        <p>
+            <li>
+                <b>Universitas Kristen Duta Wacana</b>
+            </li>
+        </p>
+        <h1>
+            <b>Skillset</b>
+        </h1>
+
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>C</li>
+            <li>Python</li>
+        </ol>
+        <section>
+
+            <button id="tombolGantiWarna">Ganti Warna </button>
+
+            <footer>
+                <p>Thank you for visiting my personal web page</p>
+            </footer>
+
+            <script>
+                const bodyElement = document.body;
+
+                function gantiWarnaRandom() {
+                    const warnaList = ['red', 'blue', 'green', 'white']
+                    const randomIndex = Math.floor(Math.random() * warnaList.length);
+                    const warnaRandom = warnaList[randomIndex];
+                    bodyElement.style.backgroundColor = warnaRandom;
+                }
+
+
+
+                const tombolGantiWarna = document.getElementById('tombolGantiWarna');
+                tombolGantiWarna.addEventListener('click', gantiWarnaRandom);
+            </script>
+</body>
+
+</html>
